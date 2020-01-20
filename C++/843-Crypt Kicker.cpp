@@ -5,13 +5,13 @@ int save1[32], save2[32];
 string word[1024];
 vector<string> vect[20];
 
-bool back(int next, int count) //¦^®Òªk 
+bool back(int next, int count) //backtrack
 {
 	int temp1[32],temp2[32];
 	int size, i, j, size1;
 	string str;
 	if(next>=count) return true;
-	for(i=0; i<26; i++){          //°O¿ı³o­Ó®É¨è¹ïÀ³ªº¦r¥À 
+	for(i=0; i<26; i++){          //è¨˜éŒ„é€™å€‹æ™‚åˆ»å°æ‡‰çš„å­—æ¯ 
 		temp1[i]=save1[i];
 		temp2[i]=save2[i];
 	}
