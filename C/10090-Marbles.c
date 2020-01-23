@@ -19,12 +19,12 @@ int main()
 		if(a%div!=0 || a<min1(n1,n2)) printf("failed\n");  
 		else{
 			i=0; a/=div; n1/=div; n2/=div;
-			while((a-i*n1)%n2!=0 && (a-i*n1)>=0) i++; //ªì©l­È 
+			while((a-i*n1)%n2!=0 && (a-i*n1)>=0) i++; //åˆå§‹å€¼ 
 			if(a-i*n1<0){
 				printf("failed\n");
 				continue;
 			}
-			x1=i; y1=(a-i*n1)/n2;                    //¸Ñ¬°±ı¨ú³Ì¤j­Èx¥H¤Î³Ì¤j­Èy 
+			x1=i; y1=(a-i*n1)/n2;                    //è§£ç‚ºæ¬²å–æœ€å¤§å€¼xä»¥åŠæœ€å¤§å€¼y 
 			y2=y1-((y1/n1)*n1); x2=x1+((y1/n1)*n2);
 			if(x1*c1+y1*c2<x2*c1+y2*c2){
 				x=x1;
