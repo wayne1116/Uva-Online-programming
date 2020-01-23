@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 import java.math.*;
-public class Main10157{
+public class Main{
 	public static void main(String[] argv){
 		Scanner cin=new Scanner(new BufferedInputStream(System.in));
 		BigInteger[][] dp=new BigInteger[200][200];
