@@ -8,6 +8,3 @@ while True:
         num1=ord(num[0][len(num[0])-1])-48
         len1=len(result[num1])
         print(result[num1][(int(num[1])-1)%len1])
-
-
-
