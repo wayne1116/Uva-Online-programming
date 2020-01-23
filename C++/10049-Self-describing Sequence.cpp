@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 int dp[1000000];
-int func(int l, int r, int target)  //�ϥ�binary search 
+int func(int l, int r, int target)  //¨Ï¥Îbinary search 
 {
 	int i=0, middle;
 	while(l<=r){
