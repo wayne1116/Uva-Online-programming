@@ -13,7 +13,7 @@ int main()
 			cin >> num[i];
 			sum+=num[i];
 		}
-		aver=sum/2; //¶V±µªñ¥­§¡¼Æ 
+		aver=sum/2; //Â¶VÂ±ÂµÂªÃ±Â¥Â­Â§Â¡Â¼Ã† 
 		for(i=0; i<=aver; i++) result[i]=0;
 		for(i=0; i<n; i++){
 			for(j=aver; j>=num[i]; j--){
