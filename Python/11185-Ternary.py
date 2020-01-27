@@ -13,6 +13,3 @@ while True:
             print(result[-i],end="")
         print()
     result.clear()
-
-
-
