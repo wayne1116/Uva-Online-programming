@@ -13,7 +13,3 @@ while True:
             print(i)
             break
         i+=1
-
-
-
-
