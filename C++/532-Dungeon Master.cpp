@@ -65,7 +65,7 @@ int main()
 							temp.x=tempr+dir[j].x;
 							temp.y=tempc+dir[j].y;
 							qu.push(pair<int,struct node1>(temph+dir[j].z,temp));
-							lnode[temph+dir[j].z].line[temp.x][temp.y]='#';           //¿ï¨ìqueue¸Ì­±´N­n±N¨º­Ó¦ì¸m¼Ğ¤W'#',Á×§KTLE 
+							lnode[temph+dir[j].z].line[temp.x][temp.y]='#';           //é¸åˆ°queueè£¡é¢å°±è¦å°‡é‚£å€‹ä½ç½®æ¨™ä¸Š'#',é¿å…TLE 
 						}
 					}
 				}
