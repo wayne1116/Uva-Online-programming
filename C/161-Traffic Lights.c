@@ -13,8 +13,8 @@ int main()
 		}
 		while(result<=18000){
 			flag=1;
-			for(i=0; i<n; i++){                                      /*­pºâ¥Xªºresult»P¥þ³¡°µ¤ñ¸û*/ 
-				while(time[i]+num[i]-5<=result) time[i]+=2*num[i];  /*§ä¥X¸Ónum[i]ÂI¤j©óresultªº³Ì¤p2*num[i]­¿¼Æ*/ 
+			for(i=0; i<n; i++){                                      /*è¨ˆç®—å‡ºçš„resultèˆ‡å…¨éƒ¨åšæ¯”è¼ƒ*/ 
+				while(time[i]+num[i]-5<=result) time[i]+=2*num[i];  /*æ‰¾å‡ºè©²num[i]é»žå¤§æ–¼resultçš„æœ€å°2*num[i]å€æ•¸*/ 
 				if(!(time[i]<=result && time[i]+num[i]-5>result)){
 					result=time[i]-1;
 					flag=0;
