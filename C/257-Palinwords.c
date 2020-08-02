@@ -8,7 +8,7 @@ int main()
 	int i=0, j=0, start1=0, start2=0, result1=0, result2=0;
 	while(scanf("%s",line)!=EOF){
 		len=strlen(line); count=0; state=0;
-		for(i=3; i<5; i++){                      /*¥u»İ§PÂ_ªø«×3©M4ªº¤l¦r¦ê*/ 
+		for(i=3; i<5; i++){                      /*åªéœ€åˆ¤æ–·é•·åº¦3å’Œ4çš„å­å­—ä¸²*/ 
 			for(j=0; j<=len-i; j++){
 				start1=j; start2=j+i-1; flag=1;
 				while(start1<start2){
