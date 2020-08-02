@@ -8,7 +8,7 @@ int main()
 	
 	for(i=0; i<=40; i++) change1[i]=i;
 	for(i=1; i<6; i++){
-		for(j=mon[i]; j<=40; j++) change1[j]=min(change1[j],change1[j-mon[i]]+1);    //©±®a§ä¹s¿úµ¹«È¤Hªº³Ì¤Ö¹s¿ú¼Æ¡A³Ì¤j¤£·|¶W¹L$2 
+		for(j=mon[i]; j<=40; j++) change1[j]=min(change1[j],change1[j-mon[i]]+1);    /*åº—å®¶æ‰¾é›¶éŒ¢çµ¦å®¢äººçš„æœ€å°‘é›¶éŒ¢æ•¸ï¼Œæœ€å¤§ä¸æœƒè¶…éŽ$2 */ 
 	}
 	
 	while(scanf("%d",&num[0])!=EOF){
@@ -24,7 +24,7 @@ int main()
 		
 		for(i=1; i<1000; i++) change2[i]=9999;
 		change2[0]=0;
-		for(i=0; i<6; i++){                      //«È¤H¤â¤W¾Ö¦³¥i¯àªº¹s¿ú 
+		for(i=0; i<6; i++){                      /*å®¢äººæ‰‹ä¸Šæ“æœ‰å¯èƒ½çš„é›¶éŒ¢*/ 
 			for(j=sum; j>=mon[i]; j--){
 				for(k=1; k<=num[i]; k++){
 					if(j-mon[i]*k<0) break;
