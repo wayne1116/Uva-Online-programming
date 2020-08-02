@@ -11,7 +11,7 @@ void qu(int step)
 			flag=1;
 			for(j=0; j<step; j++){
 				if(i==column[j] || abs(step,j)==abs(i,column[j])){  /*column[j]==i or column[j]-i==j-step or column[j]-i==step-j*/
-					flag=0;                                         /*j¬O¥Nªí²Äj¦æ, column[j]¬O¬ö¿ý²Äx¦C, °²¦pabs¬Û¦P¥Nªí¦b¦P¤@±×¦C*/ 
+					flag=0;                                         /*jæ˜¯ä»£è¡¨ç¬¬jè¡Œ, column[j]æ˜¯ç´€éŒ„ç¬¬xåˆ—, å‡å¦‚absç›¸åŒä»£è¡¨åœ¨åŒä¸€æ–œåˆ—*/ 
 					break;
 				}
 			}
