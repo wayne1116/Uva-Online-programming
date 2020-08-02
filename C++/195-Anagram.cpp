@@ -6,22 +6,22 @@ using namespace std;
 
 void recPermute(string soFar,string rest)
 {
-    string check_repeat="\0";
-    string next="\0";
+    	string check_repeat="\0";
+    	string next="\0";
 
-    if(rest == "") {
-        cout << soFar << endl;
-    } else {
-        for(int i = 0; i < rest.length(); i++) {
-            check_repeat = next;
-            next = soFar + rest[i];
+    	if(rest == "") {
+        	cout << soFar << endl;
+    	} else {
+        	for(int i = 0; i < rest.length(); i++) {
+            	check_repeat = next;
+            	next = soFar + rest[i];
             
-            string remaining = rest.substr(0,i) + rest.substr(i+1);
+            	string remaining = rest.substr(0,i) + rest.substr(i+1);
 
-            if(next != check_repeat)
-                recPermute(next, remaining);
-        }            
-    }
+            	if(next != check_repeat)
+                	recPermute(next, remaining);
+        	}            
+    	}
 }
 bool cmp(char &x, char &y)
 {
@@ -39,11 +39,11 @@ int main(void)
 {
 	int a=0;
 	string line;
-    cin >> a;
+    	cin >> a;
 	while(a--){
 		cin >> line;
 		sort(line.begin(),line.end(),cmp);
 		recPermute("",line);
 	} 
-    return 0;
+    	return 0;
 }
