@@ -4,7 +4,7 @@ int main()
 {
 	int i=0;
 	string line;
-	float upperx[10], uppery[10], lowerx[10], lowery[10];
+	double upperx[10], uppery[10], lowerx[10], lowery[10];
 	while((cin>> line)){
 		if(line[0]=='*'){
 			break;
@@ -16,10 +16,10 @@ int main()
 	double x=0;
 	double y=0;
 	while((cin >> x >> y)){
-		if(x==9999.90000 && y==9999.90000){
+		if(x==9999.9 && y==9999.9){
 			break;
 		}
-		int state=true;
+		bool state=true;
 		for(int j=0; j<i; j++){
 			if(upperx[j]<x && uppery[j]>y && lowerx[j]>x && lowery[j]<y){
 				cout << "Point " << k << " is contained in figure " << j+1 << endl;
