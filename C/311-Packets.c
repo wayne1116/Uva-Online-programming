@@ -7,21 +7,21 @@ int main()
 	while(scanf("%d %d %d %d %d %d",&num[0],&num[1],&num[2],&num[3],&num[4],&num[5])){
 		if(num[0]+num[1]+num[2]+num[3]+num[4]+num[5]==0) break;
 		result=num[5]+num[4]+num[3]+num[2]/4;
-		num[1]-=5*num[3];        /*­t¼Æ¨SÃö«Y,¤§«á·|¸É¦^¨Ó*/ 
+		num[1]-=5*num[3];        /*è² æ•¸æ²’é—œä¿‚,ä¹‹å¾Œæœƒè£œå›ä¾†*/ 
 		num[0]-=11*num[4];
 	
-		if(num[2]%4!=0){        /*·í4x4ªº®É­Ô*/ 
+		if(num[2]%4!=0){        /*ç•¶4x4çš„æ™‚å€™*/ 
 			result++;
 			remaining=num[2]%4;
-			if(remaining==1){   /*·í¥u¦³1­Ó4x4ªº®É­Ô,»İ­n5­Ó2x2,7­Ó1x1*/ 
+			if(remaining==1){   /*ç•¶åªæœ‰1å€‹4x4çš„æ™‚å€™,éœ€è¦5å€‹2x2,7å€‹1x1*/ 
 				num[0]-=7;
 				num[1]-=5;
 			}
-			else if(remaining==2){ /*·í¥u¦³2­Ó4x4ªº®É­Ô,»İ­n3­Ó2x2,6­Ó1x1*/
+			else if(remaining==2){ /*ç•¶åªæœ‰2å€‹4x4çš„æ™‚å€™,éœ€è¦3å€‹2x2,6å€‹1x1*/
 				num[0]-=6;
 				num[1]-=3;
 			} 
-			else if(remaining==3){ /*·í¥u¦³3­Ó4x4ªº®É­Ô,»İ­n1­Ó2x2,5­Ó1x1*/
+			else if(remaining==3){ /*ç•¶åªæœ‰3å€‹4x4çš„æ™‚å€™,éœ€è¦1å€‹2x2,5å€‹1x1*/
 				num[0]-=5;
 				num[1]-=1;
 			}
@@ -32,7 +32,7 @@ int main()
 			if(num[1]%9!=0) result++;
 			num[0]-=(36-4*(num[1]%9));
 		}
-		else if(num[1]<0) num[0]-=(-num[1]*4); /*À±¸É­t¼Æªº®É­Ô,¥Î1x1¥h¸É*/
+		else if(num[1]<0) num[0]-=(-num[1]*4); /*å½Œè£œè² æ•¸çš„æ™‚å€™,ç”¨1x1å»è£œ*/
 		
 		if(num[0]>0){
 			result+=num[0]/36;
