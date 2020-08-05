@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 int graph[128][128], n=0, flag[128];
-void dfs(int prev, int next)             /*¨Ï¥Îdfs©¹¤U·j´M,ª½¨ì¦A¦¸¦^¨ì®Ú¸`ÂI(root)ªº®É­Ô*/ 
+void dfs(int prev, int next)             /*ä½¿ç”¨dfså¾€ä¸‹æœå°‹,ç›´åˆ°å†æ¬¡å›åˆ°æ ¹ç¯€é»(root)çš„æ™‚å€™*/ 
 {
 	int i=0;
 	for(i=0; i<n; i++){
@@ -38,7 +38,7 @@ int main()
 			for(j=0; j<n; j++) flag[j]=0;
 			flag[i]=1; 
 			dfs(i,i);
-			for(j=0; j<n; j++){                /*°²¦pdfs§¹«áÁÙ¦³¨ä¥L»P®Úµ²ÂI¬Û³sªºÂI¨S¨«¨ì¡A¥Nªí»¡³o­Ó®Úµ²ÂI¬Ocritical point*/ 
+			for(j=0; j<n; j++){                /*å‡å¦‚dfså®Œå¾Œé‚„æœ‰å…¶ä»–èˆ‡æ ¹çµé»ç›¸é€£çš„é»æ²’èµ°åˆ°ï¼Œä»£è¡¨èªªé€™å€‹æ ¹çµé»æ˜¯critical point*/ 
 				if(flag[j]==0 && graph[i][j]){
 					result++;
 					break;
