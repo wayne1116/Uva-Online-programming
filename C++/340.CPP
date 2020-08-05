@@ -1,5 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
+#include<algorithm>
+using namespace std;
 int main()
 {
 	int i=0, j=1, a=0, result1=0, result2=0;
