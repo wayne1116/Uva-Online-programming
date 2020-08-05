@@ -9,23 +9,19 @@ int main()
 	while(fgets(line,1024,stdin)!=NULL){
 		ptr=line; count=0; flag=0;
 		while(*ptr && isspace(*ptr)) ptr++;
-		start=ptr;
-		ptr=&line[strlen(line)];
-		while(ptr!=start && isspace(*ptr)){
-			*ptr='\0';
-			ptr--;
+		
+        	i=strlen(line)-1;
+		while(i>=0 && (line[i]=='\n' || line[i]==' ')){
+			line[i--]='\0';
 		}
-		ptr=start;
+		
+        	start=ptr;
 		while(*ptr){
-			if(*ptr>='0' && *ptr<='9'){
-				num[count]=*ptr-48;
-				count++;
-			}
-			else if(*ptr=='X' && count==9){
-				num[count]=10;
-				count++;
-			}
-			else if(*ptr!='-'){
+			if(*ptr>='0' && *ptr<='9')
+				num[count++]=*ptr-'0';
+			else if(*ptr=='X' && count==9)
+				num[count++]=10;
+			else if(*ptr!='-' && *ptr!=' '){
 				flag=1;
 				break;
 			}
