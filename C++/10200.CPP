@@ -5,7 +5,7 @@ int result[100000];
 int main()
 {
 	int a, b, target, i, j, limit;
-	float count, diff, modify=1e-5;  //¤p¼ÆÂI»~®t 
+	float count, diff, modify=1e-5;
 	for(i=0; i<=10000; i++){
 		target=i*i+i+41; 
 		limit=sqrt(target);
