@@ -4,7 +4,7 @@ using namespace std;
 int main()
 {
 	long long a, i, count, limit;
-	while(cin>>a&&a){                   //Τ计计穦ㄏ縊獁獹τ玻ネ计计ΤЧキよ计 
+	while(cin>>a&&a){                   //鍥犵偤鍙湁濂囨暩鍊嬪洜鏁告墠鏈冧娇鐕堟场浜紝鑰岃兘鐢㈢敓濂囨暩鍊嬪洜鏁稿彧鏈夊畬鍏ㄥ钩鏂规暩 
 		limit=sqrt(a);
 		if(limit*limit==a) cout << "yes";
 		else cout << "no";
