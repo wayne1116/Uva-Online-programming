@@ -39,7 +39,7 @@ int main()
 						temp1/=prime[i];
 						++count1;
 					}
-					if(cal(n,prime[i])<count1){          //§Q¥Î½è¦]¼Æªº­Ó¼Æ¨Ó°µ¤ñ¸û 
+					if(cal(n,prime[i])<count1){          //åˆ©ç”¨è³ªå› æ•¸çš„å€‹æ•¸ä¾†åšæ¯”è¼ƒ 
 						flag=true;
 						break;
 					} 
