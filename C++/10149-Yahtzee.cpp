@@ -54,7 +54,7 @@ int main()
 		for(i=0; i<16; i++) result1[i]=0;
 		for(i=0; i<8192; i++) ans[i]=0;
 		for(i=0; i<13; i++){ //category
-			for(j=0; j<8192; j++){ //mask,§@¥Î¬°¬ö¿ý¤w¥Î¹Lªºdice½s¸¹ 
+			for(j=0; j<8192; j++){ //mask,ä½œç”¨ç‚ºç´€éŒ„å·²ç”¨éŽçš„diceç·¨è™Ÿ 
 				if(countbit(j)==i){
 					for(k=0; k<13; k++){ // dice
 						if(!((j>>k)&1)){
