@@ -13,18 +13,18 @@ struct Node{
 };
 bool cmp(const struct Node &a, const struct Node &b)
 {
-	if (a.point != b.point) return a.point > b.point; //±o¤À°ªªºÀu¥ı
-  	if (a.win != b.win) return a.win > b.win;//³Ó³õ¼Æ°ªªºÀu¥ı
-  	if (a.wpoint-a.lpoint != b.wpoint-b.lpoint)  return a.wpoint-a.lpoint > b.wpoint-b.lpoint;//¶i²y¼Æ®t°ªªºÀu¥ı
-  	if (a.wpoint != b.wpoint) return a.wpoint > b.wpoint; //¶i²y¼Æ°ªªºÀu¥ı
-  	if (a.play != b.play) return a.play < b.play;//¤ñÁÉ³õ¼Æ§CªºÀu¥ı
+	if (a.point != b.point) return a.point > b.point; //å¾—åˆ†é«˜çš„å„ªå…ˆ
+  	if (a.win != b.win) return a.win > b.win;//å‹å ´æ•¸é«˜çš„å„ªå…ˆ
+  	if (a.wpoint-a.lpoint != b.wpoint-b.lpoint)  return a.wpoint-a.lpoint > b.wpoint-b.lpoint;//é€²çƒæ•¸å·®é«˜çš„å„ªå…ˆ
+  	if (a.wpoint != b.wpoint) return a.wpoint > b.wpoint; //é€²çƒæ•¸é«˜çš„å„ªå…ˆ
+  	if (a.play != b.play) return a.play < b.play;//æ¯”è³½å ´æ•¸ä½çš„å„ªå…ˆ
   	for (int i = 0; i < min(a.name.length(), b.name.length()); i++)  {  // Case-insensitive lexicographic order
-    	if (isalpha(a.name[i]) && isalpha(b.name[i]))  {  //­Ya.name[i]»Pb.name[i]³£¬O¤j¤p¼g­^¤å¦r¥À
+    	if (isalpha(a.name[i]) && isalpha(b.name[i]))  {  //è‹¥a.name[i]èˆ‡b.name[i]éƒ½æ˜¯å¤§å°å¯«è‹±æ–‡å­—æ¯
       		if (toupper(a.name[i]) != toupper(b.name[i])) return toupper(a.name.at(i)) < toupper(b.name.at(i));  
      	}	  
-		else  return a.name[i] < b.name[i];  //¤£¦P®É¬°­^¤å¦r¥À
+		else  return a.name[i] < b.name[i];  //ä¸åŒæ™‚ç‚ºè‹±æ–‡å­—æ¯
   	}  
-  	return a.name.length() < b.name.length();  //­Y¨â¦r¦ê«e­±³£¬Û¦P¡A´N¤ñ¸û¦r¦êªø«×¡AµuªºÀu¥ı
+  	return a.name.length() < b.name.length();  //è‹¥å…©å­—ä¸²å‰é¢éƒ½ç›¸åŒï¼Œå°±æ¯”è¼ƒå­—ä¸²é•·åº¦ï¼ŒçŸ­çš„å„ªå…ˆ
 }
 
 int main()
