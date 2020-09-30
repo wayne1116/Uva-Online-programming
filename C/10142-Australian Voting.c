@@ -28,7 +28,7 @@ int main()
 			voter[count][temp]=0;
 			++count;
 		}
-		pass=count/2+1;                          //²¼¼Æ»İ­n¹L¥b 
+		pass=count/2+1;                          /*ç¥¨æ•¸éœ€è¦éåŠ*/ 
 		for(k=0; k<n; k++){
 			max=0; min=2147483647;
 			for(i=0; i<n; i++){
@@ -40,19 +40,19 @@ int main()
 					min=number[i];
 				}
 			}
-			if(max==min){                        //¦pªG²¼¼Æ³£¬Û¦P 
+			if(max==min){                        /*å¦‚æœç¥¨æ•¸éƒ½ç›¸åŒ*/ 
 				for(i=0; i<n; i++){
 					if(!state[i]) printf("%s",name[i]);
 				}
 				break;
 			}
-			if(max>=pass){                      //¦pªG¨ä¤¤¤@­Ó²¼¼Æ¹L¥b 
+			if(max>=pass){                      /*å¦‚æœå…¶ä¸­ä¸€å€‹ç¥¨æ•¸éåŠ*/ 
 				printf("%s",name[index]);
 				break;
 			}
 			else{
-				for(i=0; i<n; i++) if(min==number[i]) state[i]=1;   //²¼¼Æ³Ì¤pªº 
-				for(i=0; i<count; i++){                             //§ëµ¹²¼¼Æ³Ì¤pªº¿ï¥Á²¼µ¹¦¸¶¶¦ìªº­Ô¿ï¤H 
+				for(i=0; i<n; i++) if(min==number[i]) state[i]=1;   /*ç¥¨æ•¸æœ€å°çš„*/ 
+				for(i=0; i<count; i++){                             /*æŠ•çµ¦ç¥¨æ•¸æœ€å°çš„é¸æ°‘ç¥¨çµ¦æ¬¡é †ä½çš„å€™é¸äºº*/ 
 					loc=voter[i][n];
 					if(min==number[voter[i][loc]]){
 						while(state[voter[i][loc]]) ++loc;
