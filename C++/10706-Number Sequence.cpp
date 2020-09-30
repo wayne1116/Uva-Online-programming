@@ -7,7 +7,7 @@ int main()
 	while(a--){
 		cin >> n;
 		move=cnt=len=0;
-		while(move<n){     //т程环娩 
+		while(move<n){     //鍏堟壘鍒版渶閬犵殑閭婄晫 
 			temp=++cnt;
 			while(temp){
 				++len;
@@ -16,7 +16,7 @@ int main()
 			move+=len;
 		}
 		temp=cnt;
-		while(move>n){    //眖程环娩┕玡т 
+		while(move>n){    //鍐嶅緸鏈�閬犵殑閭婄晫寰�鍓嶆壘 
 			move--;
 			temp/=10;
 			if(temp==0){
