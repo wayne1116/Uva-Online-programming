@@ -23,7 +23,7 @@ int main()
 		order[j++]=40; 
 		while(fgets(line,1024,stdin)!=NULL && line[0]!='\n'){
 			b=atoi(line);
-			for(i=0; i<52; i++)temp[i]=order[poker[b-1][i]-1]; //將數字poker[b-1][i]放進位置 i
+			for(i=0; i<52; i++)temp[i]=order[poker[b-1][i]-1]; 
 			for(i=0; i<52; i++)order[i]=temp[i];
 		}
 		for(i=0; i<52; i++){
