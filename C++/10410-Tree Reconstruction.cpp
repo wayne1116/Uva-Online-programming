@@ -21,7 +21,7 @@ int main()
 		for(i=1; i<n; i++){
 			while(1){
 				u=sta.top();
-				if(u==dfsn[0]||pos[u]+1<pos[dfsn[i]]){ //¦V¤W·j´M¨Ó·½ 
+				if(u==dfsn[0]||pos[u]+1<pos[dfsn[i]]){ //Â¦VÂ¤WÂ·jÂ´MÂ¨Ã“Â·Â½ 
 					parent[dfsn[i]]=u;
 					sta.push(dfsn[i]);
 					break;
