@@ -6,8 +6,8 @@ int main()
 	while(scanf("%d%d",&a,&b)!=EOF){
 		if(a==0 && b==0) break;
 		printf("%d %d ", a, b);
-		if(a==1 && b==1) printf("Multiple\n");    //特殊情況1 
-		else if(a==1) printf("Impossible\n");     //特殊情況2 
+		if(a==1 && b==1) printf("Multiple\n");    
+		else if(a==1) printf("Impossible\n");    
 		else{
 			flag=0;
 			result=b;
