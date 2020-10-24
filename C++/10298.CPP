@@ -3,12 +3,12 @@
 #include<string.h>
 char line[1000000];
 int fail[1000000];
-int failed()                     //KMP
+int failed()                     /*KMP*/
 {
 	int len=strlen(line);
 	int i=0, j=0;
-	fail[0]=-1;   //¥ı±Nline[0]³]¬°-1 
-	for(i=1; i<len; i++){      //¥Ø¼Ğ¬°­n´M§äªº¦r¦ê 
+	fail[0]=-1;   /*å…ˆå°‡line[0]è¨­ç‚º-1 */ 
+	for(i=1; i<len; i++){      /*ç›®æ¨™ç‚ºè¦å°‹æ‰¾çš„å­—ä¸²*/ 
 		j=fail[i-1];
 		while(j>=0 && line[j+1]!=line[i]) j=fail[j];
 		if(line[i]==line[j+1]) fail[i]=j+1;
